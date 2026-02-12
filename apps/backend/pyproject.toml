@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "local-ai-backend"
+version = "0.1.0"
+description = "Backend for Local AI Studio"
+authors = ["Your Name <you@example.com>"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.104.0"
+uvicorn = "^0.24.0"
+sqlalchemy = "^2.0.0"
+alembic = "^1.12.0"
+pydantic = "^2.4.0"
+pydantic-settings = "^2.0.0"
+langchain = "^0.0.340"
+langchain-community = "^0.0.10"
+langgraph = ">=0.0.10,<0.1.0"
+ollama = "^0.1.0"
+httpx = "^0.25.0"
+python-multipart = "^0.0.6"
+jinja2 = "^3.1.0"
+psycopg2-binary = "^2.9.9"
+python-dotenv = "^1.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+black = "^23.0.0"
+ruff = "^0.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
